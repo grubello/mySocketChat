@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/list_chatrooms_FriendPicture"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="30dip"
+        app:riv_border_width="2dip"
+        app:riv_border_color="#333333"
+        app:riv_oval="true"
+        android:layout_marginStart="8dp"
+        />
+
+    <TextView
+        android:id="@+id/list_chatrooms_UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/list_chatrooms_FriendPicture"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toEndOf="@id/list_chatrooms_FriendPicture"
+        android:text="username"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        />
+
+    <TextView
+        android:id="@+id/list_chatrooms_LastMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_chatrooms_UserName"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/list_chatrooms_FriendPicture"
+        android:text="last message"
+       />
+
+    <ImageView
+        android:id="@+id/list_chatrooms_message"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:padding="3dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/addfriend_background"
+        android:src="@android:drawable/ic_dialog_email"
+        android:layout_marginBottom="2dp"
+        android:layout_alignBottom="@+id/list_chatrooms_FriendPicture"
+        android:layout_alignRight="@+id/list_chatrooms_FriendPicture"
+        />
+
+
+</RelativeLayout>

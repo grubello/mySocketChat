@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#471AEB</color>
+    <color name="colorPrimaryDark">#9746F0</color>
+    <color name="colorAccent">#D81B57</color>
+    <color name="inboxColor">#C50E0E</color>
+    <color name="friendsColor">#EEFF00</color>
+    <color name="profileColor">#00DBFF</color>
+</resources>

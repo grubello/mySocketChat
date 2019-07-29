@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/listUsersUserPicture"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="30dip"
+        app:riv_border_width="2dip"
+        app:riv_border_color="#333333"
+        app:riv_oval="true"
+        />
+
+    <TextView
+        android:id="@+id/listUsersUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/listUsersUserPicture"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toEndOf="@id/listUsersUserPicture"
+        android:layout_toRightOf="@id/listUsersUserPicture"
+        android:text="username"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/listUsersUserStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+
+        android:layout_toRightOf="@id/listUsersUserPicture"
+        android:layout_below="@id/listUsersUserName"
+        android:text="status"
+        android:visibility="gone"/>
+    
+    <ImageView
+        android:id="@+id/listUsersAddFriend"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/addfriend_background"
+        android:src="@mipmap/ic_add"
+        android:layout_marginTop="16dp"
+        />
+
+
+</RelativeLayout>

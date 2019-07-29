@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/fragment_profile_userPicture"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        app:riv_border_color="#333333"
+        app:riv_border_width="2dip"
+        app:riv_corner_radius="30dip"
+        app:riv_oval="true"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/fragment_profile_centerPoint"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/fragment_profile_userPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        />
+
+    <ImageView
+        android:id="@+id/fragment_profile_camPicture"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/fragment_profile_userPicture"
+        android:layout_toStartOf="@id/fragment_profile_centerPoint"
+        android:background="@drawable/addfriend_background"
+        android:layout_marginRight="8dp"
+        android:src="@mipmap/ic_camera"/>
+
+    <ImageView
+        android:id="@+id/fragment_profile_imgPicture"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/fragment_profile_userPicture"
+        android:layout_toEndOf="@id/fragment_profile_centerPoint"
+        android:background="@drawable/addfriend_background"
+        android:layout_marginLeft="8dp"
+        android:src="@mipmap/ic_imgpic"
+        />
+
+    <TextView
+        android:layout_marginTop="32dp"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:id="@+id/fragment_profile_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/fragment_profile_camPicture"/>
+
+    <TextView
+        android:textSize="20dp"
+        android:id="@+id/fragment_profile_userEmail"
+        android:text="User email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_profile_userName"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/profileLogoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/fragment_profile_userEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:text="sign out" />
+
+    <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+     />
+
+    <!--<com.google.android.material.bottomnavigation.BottomNavigationView-->
+        <!--android:id="@+id/navigationView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--app:itemBackground="@color/colorPrimary"-->
+        <!--app:itemIconTint="#FFFFFF"-->
+        <!--app:itemTextColor="#FFFFFF"-->
+        <!--app:menu="@xml/navigation"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--/>-->
+</RelativeLayout>
